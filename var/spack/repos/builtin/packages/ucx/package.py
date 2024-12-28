@@ -19,6 +19,9 @@ class Ucx(AutotoolsPackage, CudaPackage):
 
     license("BSD-3-Clause")
 
+    # Development
+    version("v1.18.0-rc3", sha256="3607214923fb5a8fb8afafd388b311aff69d0fa435a8610398a0612271dce6f2")
+
     # Current
     version("1.17.0", sha256="34658e282f99f89ce7a991c542e9727552734ac6ad408c52f22b4c2653b04276")
 
