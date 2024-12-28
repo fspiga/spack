@@ -20,7 +20,8 @@ class Ucx(AutotoolsPackage, CudaPackage):
     license("BSD-3-Clause")
 
     # Development
-    version("1.18.0-rc3", sha256="3607214923fb5a8fb8afafd388b311aff69d0fa435a8610398a0612271dce6f2")
+    version("1.18.0-rc3", sha256="0e8806543080c1462a9c109b3a33a39775be28d9b9b3bd51760fb43daf32b936",
+            url="https://github.com/openucx/ucx/releases/download/v1.18.0-rc2/ucx-1.18.0.tar.gz")
 
     # Current
     version("1.17.0", sha256="34658e282f99f89ce7a991c542e9727552734ac6ad408c52f22b4c2653b04276")
