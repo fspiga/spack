@@ -28,7 +28,7 @@ class Nvpl(Package):
     # TODO: add "fftw" when Fortran FFTW API completed
     provides("blas")
     provides("lapack")
-    #provides("fftw-api@3")
+    provides("fftw-api@3")
 
     variant("ilp64", default=False, description="Force 64-bit Fortran native integers")
     variant(
@@ -101,5 +101,17 @@ class Nvpl(Package):
 
         return find_libraries(name, spec.prefix.lib, shared=True, recursive=True)
 
+    @property
+    def fftw_headers(self):
+        return find_all_headers(self.spec.prefix.include)
+    
+    @property
+    def fftw_libs(self):
+        spec = self.spec
+
+        name = ["libnvpl_fftw"]
+
+        return find_libraries(name, spec.prefix.lib, shared=True, recursive=True)
+    
     def install(self, spec, prefix):
         install_tree(".", prefix)
