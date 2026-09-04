@@ -4059,6 +4059,98 @@
       },
       "cpupart": "0xd83"
     },
+    "olympus": {
+      "from": [
+        "neoverse_v2",
+        "armv9.0a"
+      ],
+      "vendor": "Nvidia",
+      "features": [
+        "fp",
+        "asimd",
+        "evtstrm",
+        "aes",
+        "pmull",
+        "sha1",
+        "sha2",
+        "crc32",
+        "atomics",
+        "fphp",
+        "asimdhp",
+        "cpuid",
+        "asimdrdm",
+        "jscvt",
+        "fcma",
+        "lrcpc",
+        "dcpop",
+        "sha3",
+        "sm3",
+        "sm4",
+        "asimddp",
+        "sha512",
+        "sve",
+        "asimdfhm",
+        "dit",
+        "uscat",
+        "ilrcpc",
+        "flagm",
+        "ssbs",
+        "sb",
+        "paca",
+        "pacg",
+        "dcpodp",
+        "sve2",
+        "sveaes",
+        "svepmull",
+        "svebitperm",
+        "svesha3",
+        "svesm4",
+        "flagm2",
+        "frint",
+        "svei8mm",
+        "svebf16",
+        "i8mm",
+        "bf16",
+        "dgh",
+        "rng",
+        "bti",
+        "ecv",
+        "afp",
+        "wfxt",
+        "fpmr",
+        "lut",
+        "faminmax",
+        "f8cvt",
+        "f8fma",
+        "f8dp4",
+        "f8dp2",
+        "f8e4m3",
+        "f8e5m2",
+        "ls64"
+      ],
+      "compilers": {
+        "gcc": [
+          {
+            "versions": "15.2.0:",
+            "flags": "-mcpu=olympus"
+          }
+        ],
+        "clang": [
+          {
+            "versions": "22:",
+            "flags": "-mcpu=olympus"
+          }
+        ],
+        "nvhpc": [
+          {
+            "versions": "26.9:",
+            "name": "olympus",
+            "flags": "-tp {name}"
+          }
+        ]
+      },
+      "cpupart": "0x010"
+    },
     "m1": {
       "from": [
         "armv8.4a"
